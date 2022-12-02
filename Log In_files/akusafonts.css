@@ -1,0 +1,270 @@
+﻿/* Alaska USA font support */
+/* PT Sans - www.fontsquirrel.com */
+
+@font-face {
+    font-family: 'pt_sans_narrowregular';
+    src: url('https://www.alaskausa.org/css/fonts/PTSans/ptsansnarrow_regular_macroman/PTN57F-webfont.eot');
+    src: url('https://www.alaskausa.org/css/fonts/PTSans/ptsansnarrow_regular_macroman/PTN57F-webfont.woff') format('woff'),
+         url('https://www.alaskausa.org/css/fonts/PTSans/ptsansnarrow_regular_macroman/PTN57F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://www.alaskausa.org/css/fonts/PTSans/ptsansnarrow_regular_macroman/PTN57F-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*
+AkusaIcon - icomoon.io
+*/
+
+@font-face {
+    font-family: 'AkusaIcon';
+    src: url('https://www.alaskausa.org/css/fonts/AkusaIcon/AkusaIcon.eot?d7g0bl');
+    src: url('https://www.alaskausa.org/css/fonts/AkusaIcon/AkusaIcon.eot?d7g0bl#iefix') format('embedded-opentype'), url('https://www.alaskausa.org/css/fonts/AkusaIcon/AkusaIcon.ttf?d7g0bl') format('truetype'), url('https://www.alaskausa.org/css/fonts/AkusaIcon/AkusaIcon.woff?d7g0bl') format('woff'), url('https://www.alaskausa.org/css/fonts/AkusaIcon/AkusaIcon.svg?d7g0bl#AkusaIcon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="AkusaIcon-"], [class*=" AkusaIcon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'AkusaIcon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.AkusaIcon-openAccount2:before {
+    content: "\e900";
+}
+
+.AkusaIcon-car-icon:before {
+    content: "\e911";
+}
+
+.AkusaIcon-pinterest:before {
+    content: "\ead1";
+}
+
+.AkusaIcon-Instagram:before {
+    content: "\e910";
+}
+
+.AkusaIcon-Chat:before {
+    content: "\e904";
+}
+
+.AkusaIcon-ContactUs:before {
+    content: "\e905";
+}
+
+.AkusaIcon-Email:before {
+    content: "\e90f";
+}
+
+.AkusaIcon-mobile:before {
+    content: "\e959";
+}
+
+.AkusaIcon-bubbles:before {
+    content: "\e96d";
+}
+
+.AkusaIcon-at:before {
+    content: "\e60e";
+}
+
+.AkusaIcon-menu:before {
+    content: "\e9bd";
+}
+
+.AkusaIcon-Information:before {
+    content: "\e90e";
+}
+
+.AkusaIcon-Blog:before {
+    content: "\e600";
+}
+
+.AkusaIcon-Facebook:before {
+    content: "\e601";
+}
+
+.AkusaIcon-LinkedIn:before {
+    content: "\e602";
+}
+
+.AkusaIcon-Twitter:before {
+    content: "\e603";
+}
+
+.AkusaIcon-locations:before {
+    content: "\e604";
+}
+
+.AkusaIcon-search:before {
+    content: "\e605";
+}
+
+.AkusaIcon-lock2:before {
+    content: "\e606";
+}
+
+.AkusaIcon-phone:before {
+    content: "\e607";
+}
+
+.AkusaIcon-rates:before {
+    content: "\e608";
+}
+
+.AkusaIcon-Youtube:before {
+    content: "\e609";
+}
+
+.AkusaIcon-up:before {
+    content: "\e60a";
+}
+
+.AkusaIcon-right:before {
+    content: "\e60b";
+}
+
+.AkusaIcon-down:before {
+    content: "\e60c";
+}
+
+.AkusaIcon-left:before {
+    content: "\e60d";
+}
+
+.AkusaIcon-home:before {
+    content: "\e901";
+}
+
+.AkusaIcon-MakePayment:before {
+    content: "\e902";
+}
+
+.AkusaIcon-getQuote:before {
+    content: "\e903";
+}
+
+.AkusaIcon-openAccount:before {
+    content: "\e906";
+}
+
+.AkusaIcon-warning:before {
+    content: "\ea07";
+}
+
+.AkusaIcon-notification:before {
+    content: "\ea08";
+}
+
+.AkusaIcon-question:before {
+    content: "\ea09";
+}
+
+.AkusaIcon-info:before {
+    content: "\ea0c";
+}
+
+.AkusaIcon-cancel-circle:before {
+    content: "\ea0d";
+}
+
+.AkusaIcon-blocked:before {
+    content: "\ea0e";
+}
+
+.AkusaIcon-file-pdf:before {
+    content: "\eada";
+}
+
+.AkusaIcon-file-word:before {
+    content: "\eadc";
+}
+
+.AkusaIcon-file-excel:before {
+    content: "\eadd";
+}
+
+.AkusaIcon-chrome:before {
+    content: "\eae5";
+}
+
+.AkusaIcon-firefox:before {
+    content: "\eae6";
+}
+
+.AkusaIcon-IE:before {
+    content: "\eae7";
+}
+
+.AkusaIcon-opera:before {
+    content: "\eae8";
+}
+
+.AkusaIcon-safari:before {
+    content: "\eae9";
+}
+
+.AkusaIcon-cancel-x:before {
+    content: "\f081";
+}
+
+.AkusaIcon-Insurance:before {
+    content: "\e907";
+}
+
+.AkusaIcon-Business:before {
+    content: "\e908";
+}
+
+.AkusaIcon-Hardhat:before {
+    content: "\e909";
+}
+
+.AkusaIcon-openSign:before {
+    content: "\e90a";
+}
+
+.AkusaIcon-Property:before {
+    content: "\e90b";
+}
+
+.AkusaIcon-Stethescope:before {
+    content: "\e90c";
+}
+
+.AkusaIcon-Bonds:before {
+    content: "\e90d";
+}
+
+.AkusaIcon-form:before {
+    content: "\e912";
+}
+
+.AkusaIcon-back:before {
+    content: "\e967";
+}
+
+.AkusaIcon-forward:before {
+    content: "\e968";
+}
+
+.AkusaIcon-forward2:before {
+    content: "\e969";
+}
+
+.AkusaIcon-back2:before {
+    content: "\e96a";
+}

@@ -1,0 +1,569 @@
+﻿/* Alaska USA Desktop Stylesheet - These build on base styles for 768px+ browsers */
+
+/* Base geometry */
+.siteHeader {
+	position:relative;z-index: 10;
+	height: 165px; box-shadow: 0 1px 3px 0 rgba(0,0,0,.5);
+	background: #096CA7 url("https://www.alaskausa.org/css/nav/header_bg.png") repeat-x scroll center bottom ;
+}
+
+
+/* 
+NavBar button background gradient
+background: #008ecf;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwOGVjZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwODhjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzAwNzZiYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDdiYzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #008ecf 0%, #0088cc 50%, #0076bc 51%, #007bc3 100%);
+background: -webkit-linear-gradient(top,  #008ecf 0%,#0088cc 50%,#0076bc 51%,#007bc3 100%);
+background: linear-gradient(to bottom,  #008ecf 0%,#0088cc 50%,#0076bc 51%,#007bc3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008ecf', endColorstr='#007bc3',GradientType=0 );
+
+*/
+
+
+
+.siteHeader .global { height:120px;}
+
+
+/* 12-col grid support - row auto-wraps floated col_x elements */
+.row {opacity:1;clear:left;}
+.row:after {content:"";display:table;clear:both;height:0;width:0;}
+.row.gap {padding-bottom:8px;}
+.row.closed {padding-top:0;padding-bottom:0;}
+
+/* remove min-widths for previously linearized columns */
+.col_4,.col_5,.col_6,.col_7,.col_8,.col_9,.col_10,.col_11,.col_12,.col_all, .pgTitle h1, .pgMain, .homeActions, .homeMain {
+	min-width:auto;
+}
+
+
+/* Grid sizing for full desktop (960) sizing */
+.col_1 { width:72px; padding-right:8px; float:left; }
+.col_2 { width:152px; padding-right:8px; float:left; }
+.col_3 { width:232px; padding-right:8px; float:left; }
+.col_4 { width:312px; padding-right:8px; float:left; }
+.col_5 { width:392px; padding-right:8px; float:left; }
+.col_6 { width:472px; padding-right:8px; float:left; }
+.col_7 { width:552px; padding-right:8px; float:left; }
+.col_8 { width:632px; padding-right:8px; float:left; }
+.col_9 { width:712px; padding-right:8px; float:left; }
+.col_10 { width:792px; padding-right:8px; float:left; }
+.col_11 { width:872px; padding-right:8px; float:left; }
+.col_12 { width:952px; padding-right:8px; float:left; }
+.col_all,.homeActions { width:952px; margin-left:auto;margin-right:auto; padding-right:8px;}
+
+.homeActions {position:relative;}
+
+
+
+
+/* *********************************
+ Alaska USA Global Navigation Styles
+********************************* */
+
+/* Corp bar - logo and tool menus */
+#logo {float:left;padding:25px 0 15px 0 ;color:#ffffff;}
+
+/* Horizontal group for 768+ px */
+.sections {float:left; margin:40px 0 0 60px; padding:0;}
+.sections li {float:left;padding:0 0 10px;}
+.sections li.on {background:url(https://www.alaskausa.org/css/nav/navSprites.png) no-repeat center 24px;}
+.sections li a{display:block; margin: 10px 0; border-left:1px dotted #999999; padding:0 10px; line-height: 30px;text-decoration:none;color:#e0e0e0;}
+.sections > li > a, .tools > li > a {font-size:1.2em;}
+.sections li:first-child a{border-width:0;}
+.sections li.on a {color:#ffffff}
+
+/* .tools is a ul/li/ul/li superfish menu */
+.tools {float:right;margin:40px 0 0;position:relative;}
+
+.tools a:focus,.tools a:hover,.tools a:active{color:#003399;text-decoration:underline; }
+/* tool entries */
+.tools > li{float:left;}
+/* tool titles */
+
+.tools > li > a { margin:10px 0 8px; border-left:1px dotted #999999; padding: 0 10px; line-height: 30px; }
+.tools > li:first-child > a { border-left:none; }
+
+
+/* hide tool icons on desktop view */
+.tools > li > a > span {display:none;font-size:12pt;padding-right:3px;vertical-align:middle;padding-bottom:4px;}
+
+/* arrow to menu on hover */
+.tools > li.sfHover > a:after {
+	content:""; position:absolute; height:0; width:0; left:50%; margin-left:-8px;bottom:-8px; border-left:8px solid transparent; border-right:8px solid transparent; border-bottom:8px solid #ffffff;box-sizing:border-box;}
+
+
+/* General .menu styles - shared by .tools .menu items and .globalNav .menu items */
+/* menu content */
+.menu .col {float:left;}
+/* customizations to links in menu and actions */
+.accordion .linkBtn {margin-bottom:10px;}
+.menu ul {padding:0;}
+
+/* .tools specific menu content */
+.tools .menu { z-index:101;padding:10px; }
+.tools.sf-js-enabled .menu {display:block;}
+.tools .menu { margin:0;}
+.tools .menu p, .tools .menu li  {margin:8px 0 0 0;}
+.tools .menu p:first-child,.tools .menu li:first-child {margin-top:0;}
+
+#ubMenu .close {display:none;}
+/* individual menu sizes and positions */
+#ubMenu .menu {width:auto;left:0;}
+#ratesMenu .menu {width:70%;left:10%;}
+#locationsMenu .menu {width:70%;right:10%;}
+#contactMenu .menu {width:70%;min-width:13.5em;right:0;}
+
+
+.globalNav .close {display:none;}	/*probably not needed, we remove the added element with js*/
+
+
+
+
+
+
+
+
+
+
+.flyin { display:none; }
+
+
+/* **********
+.globalNav is a ul/li suckerfish drop down
+********** */
+#navBar {position:relative;height:48px;}
+.globalNav {display:block;margin:0;border-top:1px solid #3789BE;padding:0;}
+
+/* globalNav bar and category labels */
+.globalNav > li {
+	float:left;box-sizing:border-box;width:18%;
+	text-align:center;
+	border-top:1px solid #006BB0;border-left:1px solid #366285;
+}
+.globalNav > li#search{width:10%;border-right:1px solid #366285;}
+.globalNav > li#search a {overflow:hidden;height:42px;}
+.globalNav > li#search span {display:inline-block; width:100%;}
+
+.globalNav > li.current, .globalNav > li.sfHover, .globalNav > li:hover {
+	border-top:1px solid #053074;
+	background:#0088cc;
+	background: -moz-linear-gradient(top, #06397A 0%,#096CA7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#096CA7), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #06397A 0%,#096CA7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #06397A 0%,#096CA7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #06397A 0%,#096CA7 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #06397A 0%,#096CA7 100%)
+}
+
+/* category label */
+.globalNav > li > a {display:block;line-height:42px;
+	font-size:1.3em;color:white;
+	text-shadow: 1px 2px 2px #333333;
+	position:relative;
+}
+.globalNav > li > a:hover {text-decoration:none;}
+.globalNav > li.sfHover > a:before {
+	content:""; position:absolute; height:0; width:0; left:50%; margin-left:-8px;bottom:0; border-left:8px solid transparent; border-right:8px solid transparent; border-bottom:8px solid #ffffff;box-sizing:border-box;}
+/* globalNav menu base styles */
+.globalNav .menu  {
+	display:none; z-index:500; margin:0; text-align:left;
+}
+.globalNav .menu h4 {color:#333333;}
+/* .globalNav menu content */
+.col ul {margin:0; padding:0;list-item-style:none;}
+.col li {list-item-style:none;margin:8px 0 0; padding:0; }
+.col li a, .menu li a {display:block; margin:0 0 .2em; padding:0 0 0 14px; text-indent:-14px;}
+.col li a:before,.menu li a:before  {content: " ";display: inline-block;height:12px; width:14px;background:url(https://www.alaskausa.org/css/nav/navSprites.png) no-repeat -44px -105px;}
+
+.searchBox {width:100px; border:1px solid #bcbcbc; min-height:26px; line-height:28px; overflow:visible; padding:0 5px; vertical-align:top; border-radius:2px;}
+/* searchBtn is a variant linkBtn */
+input.searchBtn{margin:0 0 0 10px; padding:0 5px;line-height:28px;}
+
+
+/* per-menu cusomizations width=(cols * 180) -20 */
+#accounts .menu {width:520px;left:0;}
+#loans .menu {width:350px;/*margin-left:-136px;*/left:5%;}
+#insurance .menu {width:700px;/*margin-left:-256px;*/left:5%;}
+#homeloans .menu {width:160px;/*margin-left:-386px;*/left:53%;}
+#investments .menu {width:340px;/*margin-left:-210px;*/right:5%;}
+#search .menu {width:160px;/*margin-left:-163px;*/right:8px;}
+
+#busaccounts .menu {width:340px;}
+#busservices .menu {width:340px;margin-left:-100px;}
+#busloans .menu {width:340px;margin-left:-100px;}
+#businsurance .menu {width:340px;margin-left:-100px;}
+#busrsrc .menu {width:340px;margin-left:-100px; }
+
+#company .menu {width:520px;}
+#locations .menu {width:350px;margin-left:-100px;}
+#resources .menu {width:620px;margin-left:-286px;}
+#careers .menu {width:340px;margin-left:-100px;}
+#news .menu {width:520px;margin-left:-390px; }
+
+
+#subNav {display:none;}
+
+
+
+
+
+/* pgTitle > h1 */
+.pgTitle h1 { width:960px; margin-left:auto;margin-right:auto; font-size:3em;padding-left:0}
+.pgTitle .promo {width:960px; margin-left:auto;margin-right:auto;}
+.pgTitle .decor {width:960px; margin-left:auto;margin-right:auto;}
+
+
+
+
+
+/* clear auto-indent of linearized columns/elements */
+.homeMain, .pgMain { width:960px; margin:2em auto; float:none;}
+
+
+/* Footer */
+#siteFooter {position:relative;clear:both;}
+#siteFooter:after {content:" ";display:block;height:0;clear:both;visibility:hidden;}
+* html #siteFooter {height:1%;} /* IE 5-6 Win - Holly hack */
+*:first-child+html #siteFooter {min-height:1%;} /* IE7 only */
+
+#footer {padding-bottom:20px;}
+#footer .links {line-height:3;}
+
+#footer_contact {width:30%;display:table-cell;vertical-align:top;padding:3px 15px 0 15px;}
+.social > li { width:40px; margin:0 0 10px; }
+
+#footer_sitemap {width:40%;display:table-cell;vertical-align:top;padding:3px 15px 0 15px;border-left:1px dotted #666666;border-right:1px dotted #666666;}
+
+#footer_legal {width:30%; display:table-cell;vertical-align:top;padding:8px 15px 0 15px;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal - lean overlay */
+#lean_overlay { position: fixed; z-index:100; display: none; top:0; left:0; height:100%; width:100%; background: #000; }
+
+.modal {position:relative;width:400px;/*border:2px solid #003399;*/border-radius:2px;background:white;overflow:hidden;box-shadow: 0 2px 25px 0 rgba(0,0,0,.3);}
+.modal h3 { margin-top: 0; margin-bottom: .5em; border-bottom: 2px solid #003399; padding: 3px 0; font-weight: bold; }
+.modal .col {width:180px;float:left; border-left:1px solid #f0f0f0;padding:10px 10px 10px 9px;margin-left:-1px}
+.modal .col:first-child {border-right:1px solid #f0f0f0;border-left:none;padding-left:9px}
+.modal ul {margin:.5em 0;padding:0 0 0 10px;}
+.modal p {margin:.5em 0;}
+.modal_close {height:24px; width:24px; position:absolute; right:0px;top:5px;}
+.modal_close:link, .modal_close:visited {color: #0056B8; /* ADA fix: was #044990;*/}
+/*
+.modal_close {
+	display: block; position: absolute; z-index: 200; right: 3px; top: 3px;
+	width: 25px; height: 29px; 
+	background: url(https://www.alaskausa.org/css/nav/x.png) repeat scroll 0 0 transparent;
+}
+*/
+
+
+.webpayModal { width: 550px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .linkList h2 / ul */
+.linkLists {display:table; border-collapse: separate; width:100%; margin-bottom:40px;}
+.listSpace {display:table-cell;width:11%;}
+.linkList {
+	position:relative; z-index:50; display:table-cell; width:26%;  vertical-align:top;
+	padding:0; border-radius:0; overflow:hidden;
+	background:rgba(255,255,255,.9); box-shadow: 0 2px 25px 0 rgba(0,0,0,.3); 
+}
+.linkList h2 {
+	margin:0; text-align:center; font-size:1.3em; font-weight:normal; background-color: #2d67b2; 
+}
+.linkList h2 a {
+	display:block; line-height:35px;  color:#ffffff;
+}
+.linkList h2 a:hover { text-decoration:none;}
+.linkList ul {margin-left:0;padding:10px;position:relative;}
+.linkList ul li {margin:5px 0;list-style-type:none;}
+.linkList ul li a {color: #0056B8; /* ADA Fix - was #333366; */ }
+
+/* tablet+ decoration */
+.linkList ul:before {content:""; display:block; width:100%; height:128px; margin-bottom:10px; background: url(https://www.alaskausa.org/css/nav/homeSprites.png) no-repeat 50% -64px;}
+.linkList:nth-of-type(1) ul:before {background-position:50% -64px;}
+.linkList:nth-of-type(3) ul:before {background-position:50% -224px;}
+.linkList:nth-of-type(5) ul:before {background-position:50% -392px;}
+
+/* Additional desktop decoration */
+.linkList ul:after {content:""; position:absolute; top:150px; left:10px; display:block; width:64px; height:64px; background: url(https://www.alaskausa.org/css/nav/homeSprites.png) no-repeat 0 0;}
+.linkList:nth-of-type(1) ul:after {background-position:0 0;}
+.linkList:nth-of-type(3) ul:after {background-position:-64px 0;}
+.linkList:nth-of-type(5) ul:after {background-position:-128px 0;}
+.linkList ul li {padding-left:70px;}
+
+
+/* Floating items - Wrap in a .clearfix element if all content is to be floated */
+.left, .fl {float:left;}
+.right, .fr {float:right;}
+.decorLeft {float:left;margin-right:15px;}
+.decorRight {float:right;margin-left:15px;}
+/*.clearfix {float: none;clear: both;}*/
+/* micro-clearfix */
+.clearfix:before,.clearfix:after {content: " ";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;} /* IE 6/7 */
+
+.callout-left {float:left;margin-right:1em;}
+.leftNav .callout-left {margin-left:-24px;}
+.callout-right {float:right;margin-left:1em;}
+/* Image call out box drop shadow */
+
+ .callout {float:left; padding:0 10px 5px 0;}
+.leftCol .callout {margin-left:-24px; }
+.callout img {
+	border:1px solid #999999;
+	-webkit-box-shadow: 2px 2px 1px 0 #cccccc;
+	-moz-box-shadow: 2px 2px 1px 0 #cccccc;
+	box-shadow: 2px 2px 1px 0 #cccccc; 
+	/* IE shadow support */
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=135, Strength=3);
+}
+.callout + p {margin-top:0;}
+
+
+
+/* *************************************************************
+  Lets give the site a litte more punch, pizzazz, and interest  
+************************************************************* */
+
+/*.row {background:url(https://www.alaskausa.org/css/nav/pgMainEdge.png) repeat-y 8px 0;}*/
+.col4:after {content:"";clear:both;height:0;width:0;display:table;}
+.sideBar {background-color:#ffffff;}
+
+
+/* new design */
+/*.leftCol {padding:0 0 0 24px;background:url(https://www.alaskausa.org/css/nav/pgMainEdge.png) repeat-y 8px 0;overflow:hidden;}*/
+.leftCol {margin-left: 8px; padding-left: 15px; border-left: 1px dotted #999999; }
+    .leftCol h2 {
+    position: relative;
+    margin: .5em 0 auto -22px;
+    padding-left: 22px;
+    line-height: 1.5em;
+}
+.leftCol h2:before {
+	content:""; position:absolute; height:9px; width:9px; left:2px; top:14px;background-color:#004990;}
+
+.leftCol h3 {position:relative; margin:1em 0 auto 0; padding-left:18px;}
+.leftCol h3:before {
+	content:""; position:absolute; height:8px; width:8px; left:0; top:9px;background-color:#004990;}
+
+
+
+.pgFeature {margin:0 0 1em -24px; padding:10px 20px; }
+.pgFeature h2 {margin:10px 10px -5px 0;padding-top:0;padding-left:0;}
+.pgFeature h2:before {height:0;width:0;}
+
+
+
+/* pdf icons on pdf links */
+a[href$=".pdf"]::before { background-image: url(https://www.alaskausa.org/css/images/icon-pdf.png); }
+ 
+
+
+
+/* *************************
+End Global Navigation Styles
+************************* */
+
+
+/* vertical tabSet variant - desktop only (mobile is already linearized) */
+.tabSet.vertical { margin-right:8px;}
+
+/* basic style */
+.tabSet.vertical > dt { box-sizing:border-box;position:relative; }
+.tabSet.vertical > dt.current a:after, .tabSet.vertical > dt.closed a:after { 
+	content:"";display:block;position:absolute;height:0;width:0;border-top:6px solid transparent;border-right:0 solid transparent;border-bottom:6px solid transparent;border-left:6px solid white;right:8px;top:12px;}
+
+/* enhanced style */
+.tabSet.vertical.enhance > dt {
+	width:25%; margin:0; border-radius:0; clear:left; font-weight:normal;
+}
+.tabSet.vertical.enhance > dt:last-of-type { border-bottom-width:1px; }
+.tabSet.vertical.enhance > dt:hover {background:#eeeeee;}
+.tabSet.enhance > dt.current, .tabSet.enhance > dt.closed, .tabSet.enhance > dt.current:hover, .tabSet.enhance > dt.closed:hover { background-color: #3F77C0; border-color:#5083C2;}
+
+.tabSet.vertical.enhance > dd {
+	top:0px; width:74.5%; margin-left:25%; padding:0 20px; /*box-sizing:border-box;*/
+	overflow:visible; background:white; /*box-shadow: none; height:auto !important;*/
+}
+.tabSet.vertical h2,.tabSet.vertical h3 {margin-top:.5em;}
+}
+
+
+
+
+
+.disclaimer {font-weight:normal;font-style:italic;}
+
+/* style based rollover effects for action buttons */
+A.btn:link,A.btn:visited {background-color: #ffffff;}
+A.btn:link img,A.btn:visited img {background-color: #ffffff;}
+A.btn:Hover  {background-color : #ffff99;}
+A.btn img:Hover {background-color:#ffff99;}
+ 
+.dataRowB {background-color:#f0f0f0;}
+
+
+
+.form td {padding:3px;vertical-align:top;}
+.form th {border-bottom:1px solid silver;padding:3px;text-align:left;}
+
+
+/*AnchorRight, is the piece that sometimes floats to the right most position in the tab bar   */
+/* Pr / Search / Messages */
+.anchorRight{float:right;}   /*remove  action */
+.anchorRight a{background:white;border-top:none;border-right:none;border-left:none;padding:0;}  
+.anchorRight a:hover{text-decoration:underline;}  
+
+/* Self clearing floats with class "clear" */
+.clear:after {content:" ";display:block;height:0;clear:both;visibility:hidden;}
+* html .clear {height:1%;} /* IE 5-6 Win - Holly hack */
+*:first-child+html .clear {min-height:1%;} /* IE7 only */
+
+
+
+
+.preview {border:1px dashed red;}
+.pub.preview {border:1px dashed red;}
+.pr.preview {border:1px dashed red;}
+.pr .sectionTitle{margin-top:0;}
+.is.preview {border:1px dashed red;}
+.sr.preview {border:1px dashed red;}
+
+
+dl.contact {margin-left:1em;padding-bottom:0.5em;}
+dl.contact dt {padding-left:15px;background:transparent url(https://www.alaskausa.org/css/images/bullet.gif) 3px 5px no-repeat; margin-top:0.75em;font-weight:normal;}
+dl.contact dd {margin-left:30px;padding-top:0.25em;}
+ul.contact li {padding-bottom:0.25em;}
+
+/* AUIB office locations */
+/* Contact Page */
+ div#locationIndex {margin-bottom:1em}
+ #locationIndex .header {margin-top:.75em;border-bottom:1px solid black;font-weight:bold;}
+ #locationIndex li {margin:.5em 0;}
+ #locationIndex p.officeIndexEntry {margin:0 0 0 1em;}
+ #locationIndex p.officeIndexEntry a {margin-left:-1em;}
+
+ .location h3.officeTitle {clear:both;margin:1em 0 2px -15px;background-image:none;border-top:1px solid #999999;padding:2px 2px 2px 15px;}
+ .location h3:before {display:none;}
+ .location .officeMap {float:right;border:none;padding-bottom:1em;}
+ .location .originators {float:right; width:200px;padding-bottom:1em;}
+ .location .originators p {margin:.25em 0;}
+
+
+/* Consumer loans implements both .express > form and pgBody - disable box shadow on pgBody */
+.express > form #pgBody  {padding-bottom:0;}
+.express > form {float:left;} /* float the form to auto-enclose the floated elements */
+.express .pgMain {padding-left:8px;padding-right:8px;}
+.express #pgBody .pgMain.col_12 {padding-left:0;padding-right:0;}
+
+/* Size fixes for page decoration */
+ #news .menu {margin-left:-386px;}
+
+
+/* Small-desktop / table overrides (768px)*/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+/* Base geometry */
+.pgTitle .promo, .pgTitle .decor, .pgTitle h1, .pgMain, .homeMain {width:768px;}
+/* Alaska USA Global Navigation Styles */
+.sections {margin-left:0;}
+.tools {padding-left:0;}
+.tools > li{margin-left:5px;}
+/* tool titles */
+.tools > li > a { padding: 0 8px; }
+/* tools icons - not on 768px width 
+.tools > li > a > span {display:none;}*/
+.sections > li > a, .tools > li > a {font-size:1.1em;}
+.globalNav > li > a {font-size: 1.2em;}
+/* Accordion */
+.accordion, .shortcuts {width:30%;}
+/* linkList - sizing and remove additional desktop decoration*/
+.linkList {width:30%;}
+.listSpace {width:5%;}
+.linkList ul li {padding-left:0;}
+.linkList ul ul { padding-left:0;}
+.linkList ul:after {display:none;}
+.linkList dd p {padding-left:0;}
+.linkList dd ul { padding-left:0;}
+.linkList dd:after {display:none;}
+/* Grid sizing for tablet (768-959) sizing */
+.col_1 { width:54px;}
+.col_2 { width:126px;}
+.col_3 { width:184px;}
+.col_4 { width:248px;}
+.col_5 { width:312px;}
+.col_6 { width:376px;}
+.col_7 { width:440px;}
+.col_8 { width:504px;}
+.col_9 { width:568px;}
+.col_10 { width:632px;}
+.col_11 { width:696px;}
+.col_12 { width:760px;}
+.col_all, .homeActions { width:760px;}
+
+.offset_1 { margin-left:72px; }
+.offset_2 { margin-left:136px; }
+.offset_3 { margin-left:200px; }
+.offset_4 { margin-left:264px; }
+.offset_5 { margin-left:328px; }
+.offset_6 { margin-left:392px; }
+.offset_7 { margin-left:456px; }
+.offset_8 { margin-left:520px; }
+.offset_9 { margin-left:584px; }
+.offset_10 { margin-left:648px; }
+.offset_11 { margin-left:712px; }
+/* external sites */
+body.express {position:static;}
+.express > form {background-color:#ffffff;}
+.express #header {position:static;height:auto;width:100%}
+.express #header > div:first-child { height:0; }
+.express #logo {padding:0 10px;}
+.express #navBar p {padding-right:10px; line-height:35px;text-align:right;}
+.express #navBar a {color:#ffffff;}
+.express #navBarMenu  {margin:0;}
+.express .col_12 {margin-left:0;margin-right:0;}
+.express .frmButtons {background-color:#ffffff;}
+}
+/* End of tablet (768px small-desktop) adaptations */
+
+
+
+

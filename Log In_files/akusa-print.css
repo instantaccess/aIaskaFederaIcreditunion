@@ -1,0 +1,13 @@
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+.noPrint {display:none;}
+body {position:static !important; top:0;background-color:white;}
+#header {position:static !important; top:0;}
+.dataTable {page-break-inside:avoid;}
+#pgBody {box-shadow:none;}
+
+/* print style from akusa-desktop.css */
+@media all and (min-width: 768px){
+	.siteHeader > div:first-child {position:static !important; top:0;}
+}
+

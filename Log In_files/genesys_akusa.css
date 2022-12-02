@@ -1,0 +1,240 @@
+/************
+This CSS was generated using a LESS to CSS conversion tool: https://jsonformatter.org/less-to-css
+The template used to start can be found here: https://all.docs.genesys.com/Special:Repository/theme-template-dark.less?page=WID/Current/Developer/GWCCustomize&id=bc0a2c34-c723-477e-9c48-f651490970d9
+Change all instances of cx-theme-light to cx-theme-akusa
+
+Note: the conversion tool did not properly replace one item.  This row needed to be modified manually:
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#5081E1,endColorstr=#044880,GradientType=0)
+*/
+
+/****** items not part of the .less theme --- Do not remove when replacing the css from the output of the .less converter**********/
+
+.cx-widget.cx-theme-akusa .cx-webchat .cx-message.cx-agent .cx-bubble,
+.cx-widget.cx-theme-akusa .cx-webchat .cx-message.cx-bot .cx-bubble {
+    background-color: #f0f0f0;
+}
+.cx-widget.cx-theme-akusa .cx-webchat .cx-message.cx-you .cx-bubble {   /*this is the member*/
+    background-color: #57abf01c;
+}
+.cx-widget.cx-theme-akusa .cx-webchat .cx-message.cx-system .cx-bubble {    /*system messages like "Agent connected"*/
+    background-color: inherit;
+}
+
+
+/***********end non-less styles***************/
+
+
+.cx-widget.cx-theme-akusa {
+    color: #000000;
+    background-color: #FDFDFD;
+    scrollbar-face-color: #CCCCCC;
+}
+
+    .cx-widget.cx-theme-akusa .cx-theme {
+        background-color: #FDFDFD;
+        color: #000000;
+        border-color: #545454 !important;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-overlay {
+        background-color: #FDFDFD;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-svg-icon-tone1 {
+        fill: #004990;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-svg-icon-tone2 {
+        fill: #8C8C8C;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-svg-icon-shadow1 {
+        fill: #000000;
+        opacity: 0.2;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-svg-icon-shadow2 {
+        fill: #000000;
+        opacity: 0.1;
+    }
+
+    .cx-widget.cx-theme-akusa * {
+        border-color: #545454;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-titlebar .cx-title {
+        color: #000000;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-buttons-window-control .cx-svg-icon-tone1 {
+        fill: #8795A6;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-input-icon-overlay .cx-svg-icon-tone1 {
+        fill: #98A7B8;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-input-group-btn .cx-svg-icon-tone1 {
+        fill: #FDFDFD;
+    }
+
+    .cx-widget.cx-theme-akusa label {
+        color: #000000;
+    }
+
+    .cx-widget.cx-theme-akusa a {
+        color: #000000;
+    }
+
+        .cx-widget.cx-theme-akusa a:hover {
+            color: #000000;
+        }
+
+    .cx-widget.cx-theme-akusa .cx-icon-alert-circle {
+        color: #F53131;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-footer, .cx-widget.cx-theme-akusa .cx-branding {
+        color: #66759B;
+    }
+
+        .cx-widget.cx-theme-akusa .cx-footer *, .cx-widget.cx-theme-akusa .cx-branding * {
+            fill: #66759B;
+        }
+
+    .cx-widget.cx-theme-akusa .cx-form-control.cx-error {
+        border-color: #F53131;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-form-control::placeholder {
+        color: #6F7491;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-form-control:-moz-placeholder {
+        color: #6F7491;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-form-control::-moz-placeholder {
+        color: #6F7491;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-form-control:-ms-input-placeholder {
+        color: #6F7491;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-form-control::-webkit-input-placeholder {
+        color: #6F7491;
+    }
+
+    .cx-widget.cx-theme-akusa input:focus, .cx-widget.cx-theme-akusa textarea:focus, .cx-widget.cx-theme-akusa .cx-btn:focus, .cx-widget.cx-theme-akusa .cx-button-group button:focus, .cx-widget.cx-theme-akusa .cx-form-control:not(.cx-error):focus {
+        border-color: #5791FD !important;
+    }
+
+    .cx-widget.cx-theme-akusa input[type="text"], .cx-widget.cx-theme-akusa input[type="email"], .cx-widget.cx-theme-akusa input[type="tel"], .cx-widget.cx-theme-akusa select, .cx-widget.cx-theme-akusa textarea {
+        background-color: #FDFDFD;
+        color: #000000;
+        border-color: #94948A;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-btn-default {
+        background: none;
+        border-color: #545454 !important;
+        color: #FDFDFD;
+        background-color: #545454;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-btn.cx-disabled {
+        background: #CCCCCC;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-btn-primary {
+        color: #FDFDFD;
+        border-color: #004990 !important;
+        background: #004990;
+        background: -moz-linear-gradient(top,#004990 0%,#044880 100%);
+        background: -webkit-linear-gradient(top,#004990 0%,#044880 100%);
+        background: linear-gradient(to bottom,#004990 0%,#044880 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004990,endColorstr=#044880,GradientType=0);
+        background-color: #004990;
+    }
+
+        .cx-widget.cx-theme-akusa .cx-button-group .cx-btn-primary:focus, .cx-widget.cx-theme-akusa .cx-btn-primary:focus, .cx-widget.cx-theme-akusa .cx-button-group .cx-btn-default:focus, .cx-widget.cx-theme-akusa .cx-btn-default:focus {
+            border-color: #000 !important;
+        }
+
+    .cx-widget.cx-theme-akusa .cx-ac-dropdown-menu {
+        background: #FDFDFD;
+        border-color: #545454 !important;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-ac-suggestion:hover, .cx-widget.cx-theme-akusa .cx-ac-suggestion.cx-active {
+        background-color: #5791FD;
+        color: #FDFDFD;
+    }
+
+    .cx-widget.cx-theme-akusa ::-webkit-scrollbar-thumb {
+        background: #939399;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-smokescreen {
+        background-color: #FDFDFD;
+        opacity: 0.7;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-dialog-container .cx-dialog {
+        background-color: #FDFDFD;
+        border-color: #545454 !important;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-theme-background {
+        background-color: #FDFDFD;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-theme-border {
+        border: 1px solid #545454 !important;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-theme-text {
+        color: #000000;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-theme-icon-interactive1 svg .cx-svg-icon-tone1 {
+        fill: #5081E1;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-theme-icon-positive svg .cx-svg-icon-tone1 {
+        fill: #34A84F;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-theme-icon-negative svg .cx-svg-icon-tone1 {
+        fill: #F53131;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-theme-icon-warning svg .cx-svg-icon-tone1 {
+        fill: #D47F2F;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-warning {
+        color: #F53131 !important;
+    }
+
+        .cx-widget.cx-theme-akusa .cx-warning .cx-icon svg * {
+            fill: #F53131 !important;
+        }
+
+    .cx-widget.cx-theme-akusa .cx-countdown {
+        color: #000000;
+    }
+
+        .cx-widget.cx-theme-akusa .cx-countdown .cx-icon svg * {
+            fill: #000000;
+        }
+
+    .cx-widget.cx-theme-akusa .cx-loading-screen .cx-loading-icon svg g g, .cx-widget.cx-theme-akusa .cx-loading-container .cx-loading-icon svg g g {
+        stroke: #2B74FF;
+    }
+
+    .cx-widget.cx-theme-akusa .cx-loading-screen .cx-loading-icon svg g:first-child g, .cx-widget.cx-theme-akusa .cx-loading-container .cx-loading-icon svg g:first-child g {
+        stroke: #72799D;
+    }
+ 
